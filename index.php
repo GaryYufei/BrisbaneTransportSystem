@@ -1,0 +1,90 @@
+<?php
+?>
+<html>
+	<head>
+		<title>Go Card Alaysis</title>
+		<link rel="stylesheet" type="text/css" href="static/data.css" media="all" />
+		<link rel="stylesheet" href="static/bootstrap.min.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="span8">
+					<div id="map"></div>
+				</div>
+				<div class="span4">
+
+					<div id="date" class="well">
+						<h4>Waiting Date ...</h4>
+					</div>
+
+					<div id="CurrentData"  class="leftToolBar">
+
+						<div id="countBar" >
+							<table class=" table table-bordered ">
+								<tr>
+									<td><div class="text-center">Total People</div></td>
+									<td><div class="text-center">Current People</div></td>
+								</tr>
+								<tr>
+									<td><div id="TotalPeople" class="text-center">0</div></td>
+									<td>
+										<div id="CurPeople" class="text-center">0</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div id="progressBar">
+							<div class="progress">
+							  <div class="bar" id="Progress_Bar" style="width: 0%;"></div>
+							</div>
+						</div>
+					</div>
+
+					<div id="speed" class="leftToolBar">
+						<div id="speedShow">
+							<table class=" table table-bordered ">
+								<tr>
+									<td><div class="text-center">Real World</div></td>
+									<td><div class="text-center">Application</div></td>
+								</tr>
+								<tr>
+									<td>
+										<div id="TotalPeople" class="text-center">
+											<span class="badge badge-info">60</span><strong>sec.</strong> 
+										</div>
+									</td>
+									<td>
+										<div id="CurPeople" class="text-center">
+											<span id="speedContainer" class="badge badge-info">1</span><strong>sec.</strong>
+										</div>
+									</td>
+								</tr>
+							</table>
+							
+						</div>
+						<div class="centerBtn" id="speedController">
+							<div class="btn-group btnG">
+							  <button id="start" class="btn btn-primary"><i class="icon-play icon-white"></i></button>
+							  <button id="end" class="btn btn-primary"><i class="icon-pause icon-white"></i></button>
+							  <button id="SpeedUp" class="btn btn-primary"><i class="icon-arrow-up icon-white"></i></button>
+							  <button id="SlowDown" class="btn btn-primary"><i class="icon-arrow-down icon-white"></i></button>
+							</div>
+						</div>
+					</div>
+
+					<div id="AreaChart">
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="static/d3.min.js" charset="utf-8"></script>
+		<script src="static/d3-tip.js" charset="utf-8"></script>
+		<script src="static/moment.js" charset="utf-8"></script>
+		<script src="BrisbaneTransport.js" charset="utf-8"></script>
+		<script src="timeController.js" charset="utf-8"></script>
+		<script src="RunScript.js" charset="utf-8"></script>
+	</body>
+</html>
