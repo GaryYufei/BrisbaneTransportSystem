@@ -1,0 +1,155 @@
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+#map{
+  position:relative;
+  margin:25px 5px;
+  padding:39px 19px 14px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+}
+
+#map:after{
+  content:"Map";
+  position: absolute;
+  top:1px;
+  left:-1px;
+  padding:3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color:#9da0a4;
+}
+
+.leftToolBar{
+    position:relative;
+    margin: 11px auto;
+    border:2px solid #ddd;
+    padding:5px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#date{
+    margin-top:25px;
+    margin-bottom: 6px;
+    text-align: center;
+    position:relative;
+}
+
+#date:after{
+  content:"Time";
+  position: absolute;
+  top:1px;
+  left:-1px;
+  padding:3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color:#9da0a4;
+}
+
+
+#speed:after{
+  content:"Speed";
+  position: absolute;
+  top:1px;
+  left:-1px;
+  padding:3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color:#9da0a4;
+}
+
+#speedShow{
+  margin-top:25px;
+}
+
+#speedController{
+  margin:5px;
+  margin-top: 10px;
+}
+
+
+#CurrentData:after{
+  content:"CurrentData";
+  position: absolute;
+  top:1px;
+  left:-1px;
+  padding:3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color:#9da0a4;
+}
+
+
+#LoadNewData:after{
+  content:"LoadNewData";
+  position: absolute;
+  top:1px;
+  left:-1px;
+  padding:3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color:#9da0a4;
+}
+
+.centerBtn{
+  text-align: center;
+}
+
+.btnG{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#progressBar{
+    margin-top:5px;
+}
+
+#countBar{
+  margin-top: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#selectNewDate{
+  margin-top:20px;
+}
+
