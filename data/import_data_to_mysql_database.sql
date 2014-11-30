@@ -1,7 +1,7 @@
 
 -- gtfs reference: https://developers.google.com/transit/gtfs/reference
--- code reference: http://www.mysqltutorial.org/import-csv-file-mysql-table/accessible
--- usage: should change .txt files' address below to yours location when you try to load your data
+-- code reference: http://www.mysqltutorial.org/import-csv-file-mysql-table
+-- usage: should change .csv or .txt files' address below to yours location when you try to load your data
 -- date: 30/11/2014
 
 -- initial database
